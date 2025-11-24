@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.n1netails</groupId>
 	<artifactId>n1netails-sandbox</artifactId>
-	<version>0.0.1</version>
+	<version>0.3.0</version>
 	<name>n1netails-sandbox</name>
-	<description>N1ne Tails Sandbox used to test different N1ne Libraries</description>
+	<description>N1netails Sandbox used to test different N1netail Libraries</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -38,19 +38,38 @@
 		<dependency>
 			<groupId>com.n1netails</groupId>
 			<artifactId>n1netails-kuda</artifactId>
-			<version>0.1.0</version>
+			<version>0.3.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.n1netails</groupId>
 			<artifactId>n1netails-discord-webhook-client</artifactId>
-			<version>0.1.0</version>
+			<version>0.1.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.n1netails</groupId>
 			<artifactId>n1netails-telegram-client</artifactId>
-			<version>0.1.0</version>
+			<version>0.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.n1netails</groupId>
+			<artifactId>n1netails-slack-client</artifactId>
+			<version>0.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.n1netails</groupId>
+			<artifactId>n1netails-teams-webhook-client</artifactId>
+			<version>0.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.42</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>

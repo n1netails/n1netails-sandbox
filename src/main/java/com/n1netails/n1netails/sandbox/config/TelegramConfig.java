@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class TelegramConfig {
 
     @Bean
-    public BotService botService() { return new BotService(); }
+    public BotService telegramBotService() { return new BotService(); }
 
     @Bean
     public TelegramClient telegramClient(BotService service) {

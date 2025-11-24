@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class DiscordWebhookConfig {
 
     @Bean
-    public WebhookService webhookService() {
+    public WebhookService discordWebhookService() {
         return new WebhookService();
     }
 
