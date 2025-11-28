@@ -5,8 +5,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Profile;
 
 
+@Profile("!test")
 @RequiredArgsConstructor
 @SpringBootApplication
 public class N1netailsSandboxApplication implements CommandLineRunner {
@@ -23,6 +25,7 @@ public class N1netailsSandboxApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+
 
 		// ===================================================
 		// Kuda

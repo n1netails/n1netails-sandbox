@@ -1,0 +1,15 @@
+n1netails.sandbox:
+  kuda:
+    n1ne-token: ${N1NETAILS_SANDBOX_KUDA_N1NE_TOKEN:add-your-n1ne-token-here}
+    api: ${N1NETAILS_SANDBOX_KUDA_API_URL:http://localhost:9901}
+    path: ${N1NETAILS_SANDBOX_KUDA_API_PATH:/ninetails/alert}
+  teams:
+    webhook: ${N1NETAILS_SANDBOX_TEAMS_WEBHOOK_URL:http://your-teams-webhook-url}
+  slack:
+    bot-token: ${N1NETAILS_SANDBOX_SLACK_BOT_TOKEN:bot-token-value} # example (eg. xoxb-your-toke-value).
+    channel: ${N1NETAILS_SANDBOX_SLACK_CHANNEL:#channel-value} # example (eg. #prototype).
+  discord:
+    webhook: ${N1NETAILS_SANDBOX_DISCORD_WEBHOOK_URL:http://your-discord-webhook-url}
+  telegram:
+    bot-token: ${N1NETAILS_SANDBOX_TELEGRAM_BOT_TOKEN:bot-token-value}
+    chat-id: ${N1NETAILS_SANDBOX_TELEGRAM_CHAT_ID:chat-id-value}
