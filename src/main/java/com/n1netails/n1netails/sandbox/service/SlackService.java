@@ -3,8 +3,12 @@ package com.n1netails.n1netails.sandbox.service;
 import com.n1netails.n1netails.slack.api.SlackClient;
 import com.n1netails.n1netails.slack.exception.SlackClientException;
 import com.n1netails.n1netails.slack.model.SlackMessage;
+import com.slack.api.model.block.Blocks;
+import com.slack.api.model.block.composition.BlockCompositions;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
 
 @Service
 public class SlackService implements CommunicationPlatform {
@@ -20,11 +24,12 @@ public class SlackService implements CommunicationPlatform {
 
     @Override
     public void sendNotification() throws SlackClientException {
-        // Create the message
         SlackMessage message = new SlackMessage();
         message.setChannel(channel);
-        message.setText("Hello from the N1ne Tails Slack Client!");
-        // Send the message
+        message.setText("This is a fallback message for notifications.");
+        message.setBlocks(Arrays.asList(
+                Blocks.section(section -> section.text(BlockCompositions.markdownText("*This is a message with blocks.*")))
+        ));
         slackClient.sendMessage(message);
     }
 }
